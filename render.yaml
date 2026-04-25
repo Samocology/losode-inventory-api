@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: losode-inventory-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PHP_VERSION
+        value: 8.3
